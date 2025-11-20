@@ -31,6 +31,26 @@ k3s-ec2-helm-prometheus/
 ```
 ---
 
+## Prerequisite
+Before running this script, make sure the following tools are installed on your machine:
+1. AWS CLI (Required)
+The script uses the AWS CLI to create and manage resources.
+[AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+Verify installation:
+```bash
+aws --version
+Output: aws-cli/1.22.34 Python/3.10.12 Linux/6.6.87.2-microsoft-standard-WSL2 botocore/1.23.34
+```
+2. Bash (most Linux systems have it already)
+3. Optional (recommended)
+These will be auto-installed by the script if missing:
+- jq
+- kubectl
+- helm
+
+---
+
 ## How to Run
 ```bash
 git clone https://github.com/KushalNishad/k3s-ec2-helm-prometheus.git
