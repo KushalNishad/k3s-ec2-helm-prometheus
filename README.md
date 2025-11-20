@@ -33,7 +33,7 @@ k3s-ec2-helm-prometheus/
 
 ## How to Run
 ```bash
-git clone https://github.com/<your-username>/k3s-ec2-helm-prometheus.git
+git clone https://github.com/KushalNishad/k3s-ec2-helm-prometheus.git
 cd k3s-ec2-helm-prometheus
 
 cp .env.example .env
