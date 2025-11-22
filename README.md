@@ -14,6 +14,10 @@ Everything is driven by a single Bash script (`setup.sh`).
 ```bash
 k3s-ec2-helm-prometheus/
 │
+├── Docs                          # Output
+│   │   └── sEC2_Instance.png
+│   │   └── Nginx_webserver.png
+│   │   └── Prometheus.png
 ├── setup.sh                      # Main automation script
 ├── remote_script.sh              # Script to install k3s, helm, prometheus in EC2
 ├── cleanup.sh                    # (Optional) Removes all AWS resources
