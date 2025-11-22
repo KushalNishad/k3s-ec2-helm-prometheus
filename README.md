@@ -86,7 +86,7 @@ http://ec2-instance-public-ip:30090
 ![EC2 Instance](Docs/EC2_Instance.png)
 
 ## Nginx Webserver Output
-![Nginx_webserver]
+![Nginx_webserver](Docs/Nginx_webserver.png)
 
 ## Prometheus Metric Output
 ![Prometheus Metric](Docs/Prometheus.png)
