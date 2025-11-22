@@ -77,3 +77,12 @@ http://ec2-instance-public-ip:30090
 ```bash
 ./cleanup_script.sh
 ```
+
+## EC2 Instance Output
+![EC2 Instance](Docs/EC2_Instance.png)
+
+## Nginx Webserver Output
+![Nginx_webserver](Docs/Nginx_webserver.png)
+
+## Prometheus Metric Output
+![Prometheus Metric](Docs/Prometheus.png)
