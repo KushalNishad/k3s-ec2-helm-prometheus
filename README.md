@@ -15,19 +15,19 @@ Everything is driven by a single Bash script (`setup.sh`).
 k3s-ec2-helm-prometheus/
 │
 ├── setup.sh                      # Main automation script
+├── remote_script.sh              # Script to install k3s, helm, prometheus in EC2
 ├── cleanup.sh                    # (Optional) Removes all AWS resources
 ├── README.md                     # Documentation
 ├── .env.example                  # Template for AWS credentials
 │
-├── Resources/
+├── Resources/                    # This folder is excluded from version control through .gitignore
 │   ├── AWS/
 │   │   ├── ec2_details.json      # Stores instance metadata
 │   │   └── sg_details.json       # Stores security group metadata
+│   │   └── sg_rules.txt          # Stores security group rules metadata
+│   │   └── key.pem               # private key to ssh into instance
 │   └── Logs/
 │       └── setup.log             # Full script log output
-│
-└── helm/
-    └── nginx-chart/              # (Optional) Custom Helm chart for Nginx
 ```
 ---
 
@@ -66,3 +66,12 @@ vi .env     # add AWS keys + region
 chmod +x setup.sh
 ./setup.sh
 ```
+
+## Access NGINX web server
+http://ec2-instance-public-ip:30080
+
+## Access Prometheus server
+http://ec2-instance-public-ip:30090
+
+## To clean up the resources
+./clean_script.sh

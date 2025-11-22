@@ -1,0 +1,5 @@
+# Environment variables
+.env
+
+# AWS generated files
+Resources/AWS/
