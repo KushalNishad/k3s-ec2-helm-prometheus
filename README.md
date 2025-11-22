@@ -74,4 +74,6 @@ http://ec2-instance-public-ip:30080
 http://ec2-instance-public-ip:30090
 
 ## To clean up the resources
-./clean_script.sh
+```bash
+./cleanup_script.sh
+```
